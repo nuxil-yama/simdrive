@@ -1,0 +1,20 @@
+@mixin PC {
+  @include min-screen(768px) {
+    @content;
+  }
+}
+
+@mixin SP {
+  @include max-screen(767px) {
+    @content;
+  }
+}
+
+@mixin flex-row() {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+}
