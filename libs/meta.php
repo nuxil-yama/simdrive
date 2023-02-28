@@ -22,7 +22,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Raleway:wght@500;700&display=swap" rel="stylesheet">
-<link href="<?php echo APP_URL; ?>scss/style.css" rel="stylesheet">
+<link href="<?php echo APP_URL; ?>css/style.css" rel="stylesheet">
 
 <link rel="icon" href="<?php echo APP_URL; ?>images/favicons/favicon.ico">
 <link rel="shortcut icon" href="<?php echo APP_URL; ?>images/favicons/favicon.ico">

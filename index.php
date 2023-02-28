@@ -6,13 +6,9 @@ include $path.'/libs/meta.php';
 </head>
 <body>
 <?php include $path.'/libs/header.php'; ?>
-<main>
-  <article>
-    <section class="mainvisual">
-      
-    </section>
-  </article>
-</main>
+<!-- contents -->
+コンテンツエリア
+<!-- contents -->
 <?php include $path.'/libs/footer.php'; ?>
 </body>
 </html>
