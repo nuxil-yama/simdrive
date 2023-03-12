@@ -10,6 +10,12 @@
   }
 }
 
+@mixin MD {
+  @include max-screen(1090px) {
+    @content;
+  }
+}
+
 @mixin flex-row() {
   display: -webkit-flex;
   display: flex;

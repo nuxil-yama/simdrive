@@ -1,0 +1,129 @@
+.menu {
+  position: fixed;
+  right: 49px;
+  bottom: 60px;
+  z-index: 2;
+  opacity: 0;
+
+  @include MD {
+    display: none;
+    opacity: 1;
+    background: #000;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 122px 40px 55px;
+    overflow-y: auto;
+    overscroll-behavior-y: contain;
+  }
+
+  &__nav {
+    margin-bottom: 36px;
+
+    @include MD {
+      margin-bottom: 53px;
+    }
+
+    &-list {
+      @include MD {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 35px 0;
+      }
+    }
+
+    &-item {
+      &:not(:last-child) {
+        margin-bottom: 14px;
+
+      }
+
+      a {
+        font-family: $aviano;
+        @include font-size(30);
+
+        @include MD {
+          display: flex;
+          align-items: center;
+          gap: 0 21px;
+        }
+
+        span {
+          font-family: $han-serif;
+          font-weight: 500;
+          @include font-size(12);
+        }
+      }
+
+    }
+  }
+
+  &__cv {
+    &-btn {
+      display: block;
+      width: 150px;
+
+      @include min-screen(1091px) {
+        &::after {
+          content: '';
+          display: block;
+          width: 100%;
+          height: 1px;
+          background: #fff;
+          transition: width .2s;
+        }
+      }
+
+      @include MD {
+        width: 100%;
+        max-width: 500px;
+        margin-left: auto;
+        margin-right: auto;
+        border: 1px solid #fff;
+      }
+
+      &:first-child {
+        margin-bottom: 24px;
+      }
+
+      a {
+        display: block;
+        width: 100%;
+        padding-bottom: 12px;
+        @include font-size(14);
+        color: #fff;
+        text-align: left;
+        transition: color .2s;
+
+        @include MD {
+          padding: 21px 0 28px;
+          @include font-size(12);
+          text-align: center;
+        }
+
+        span {
+          font-family: $aviano;
+          @include font-size(30);
+        }
+      }
+
+      @include PC {
+        &:hover {
+          a {
+            color: #BEBEBE;
+          }
+
+          &::after {
+            width: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+body.show {
+  overflow: hidden;
+}
